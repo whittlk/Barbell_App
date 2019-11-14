@@ -1,0 +1,40 @@
+{
+  "project_info": {
+    "project_number": "874432234799",
+    "firebase_url": "https://barbell-app.firebaseio.com",
+    "project_id": "barbell-app",
+    "storage_bucket": "barbell-app.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:874432234799:android:eef5396c0ce094ebec8dda",
+        "android_client_info": {
+          "package_name": "com.example.barbellapp"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "874432234799-doml7e38monatjv1aq4bqcrhsjtiil03.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyBtU2QpIqADu90ds0ccaDI4YAuMaIuVtQU"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "874432234799-doml7e38monatjv1aq4bqcrhsjtiil03.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
