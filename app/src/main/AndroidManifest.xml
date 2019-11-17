@@ -10,7 +10,9 @@
         android:roundIcon="@mipmap/ic_launcher_round"
         android:supportsRtl="true"
         android:theme="@style/AppTheme">
-        <activity android:name=".LegendsMain"></activity>
+        <activity android:name=".LegendCreateAccount"></activity>
+        <activity android:name=".LegendProfile" />
+        <activity android:name=".LegendsMain" />
         <activity android:name=".LegendSettings" />
         <activity android:name=".LegendCrossfit" />
         <activity android:name=".SignupActivity" />
