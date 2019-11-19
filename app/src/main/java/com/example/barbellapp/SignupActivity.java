@@ -5,6 +5,7 @@ import androidx.appcompat.app.AppCompatActivity;
 
 import android.content.Intent;
 import android.os.Bundle;
+import android.util.Log;
 import android.view.View;
 import android.widget.Button;
 import android.widget.EditText;
@@ -23,6 +24,7 @@ public class SignupActivity extends AppCompatActivity {
     EditText password;
     Button signup;
 
+    private static final String TAG = "SignupActivity";
     FirebaseAuth firebaseAuth;
 
     @Override
@@ -51,9 +53,11 @@ public class SignupActivity extends AppCompatActivity {
                                     Toast.makeText(SignupActivity.this, "Registered Successfully",
                                             Toast.LENGTH_LONG).show();
                                     startActivity(new Intent(SignupActivity.this, LoginActivity.class));
+                                    Log.i("SignupActivity", "Sign Up Successful" );
                                 }else{
                                     Toast.makeText(SignupActivity.this, task.getException().getMessage(),
                                             Toast.LENGTH_LONG).show();
+                                    Log.e("SignupActivity", "Sign Up Failed" );
                                 }
                             }
 

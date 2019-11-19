@@ -5,6 +5,7 @@ import androidx.appcompat.app.AppCompatActivity;
 
 import android.content.Intent;
 import android.os.Bundle;
+import android.util.Log;
 import android.view.View;
 import android.widget.Button;
 import android.widget.EditText;
@@ -23,6 +24,7 @@ public class LoginActivity extends AppCompatActivity {
     EditText lUser;
     EditText lPass;
     Button lLogin;
+    private static final String TAG = "LoginActivity";
 
     FirebaseAuth firebaseAuth;
 
@@ -50,9 +52,11 @@ public class LoginActivity extends AppCompatActivity {
                         lProgressBar.setVisibility(View.GONE);
                         if(task.isSuccessful()){
                             startActivity(new Intent(LoginActivity.this, ProfileActivity.class));
+                            Log.i("LoginActivity", "Login Successful" );
                         }else{
                             Toast.makeText(LoginActivity.this, task.getException().getMessage(),
                                     Toast.LENGTH_LONG).show();
+                            Log.e("LoginActivity", "Login Failed" );
                         }
                     }
                 });
