@@ -10,7 +10,8 @@
         android:roundIcon="@mipmap/ic_launcher_round"
         android:supportsRtl="true"
         android:theme="@style/AppTheme">
-        <activity android:name=".LegendProfilePhoto"></activity>
+        <activity android:name=".LegendsHome"></activity>
+        <activity android:name=".LegendProfilePhoto" />
         <activity android:name=".LegendCreateAccount" />
         <activity android:name=".LegendProfile" />
         <activity android:name=".LegendsMain" />
