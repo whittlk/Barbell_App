@@ -52,13 +52,20 @@ public class LegendCreateAccount extends AppCompatActivity {
 
         firebaseAuth = firebaseAuth.getInstance();
 
+        //TODO
         register.setOnClickListener(new View.OnClickListener(){
             @Override
             public void onClick(View view) {
+                //Create a string for P and CP
+                // P: password
+                // cp: Compare password
                 if (!p.equals(cP)) {
                     Toast.makeText(LegendCreateAccount.this, "Passwords Do Not Match",
                             Toast.LENGTH_LONG).show();
-                }else {
+                }
+                //Register user in fire base
+                //Change
+                else {
                     progressBar.setVisibility(View.VISIBLE);
                     firebaseAuth.createUserWithEmailAndPassword(email.getText().toString(),
                             pass.getText().toString())
