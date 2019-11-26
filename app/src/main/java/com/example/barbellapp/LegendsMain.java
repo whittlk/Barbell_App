@@ -19,6 +19,16 @@ import com.google.android.gms.tasks.Task;
 import com.google.firebase.auth.AuthResult;
 import com.google.firebase.auth.FirebaseAuth;
 
+/**
+ * LegendsMain is used for having users login. They will enter their username
+ * and password that is stored in firebase. Once that is authenticated, they
+ * will be redirected to their home page.
+ *
+ * New users can click on the link at the bottom to create an account in
+ * firebase. This will redirect them to the create account page and store
+ * their information in firebase.
+ */
+
 public class LegendsMain extends AppCompatActivity {
 
     ProgressBar lProgressBar;
