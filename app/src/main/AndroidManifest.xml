@@ -12,7 +12,13 @@
         android:roundIcon="@mipmap/ic_launcher_round"
         android:supportsRtl="true"
         android:theme="@style/AppTheme">
-        <activity android:name=".LegendsNavigation"></activity>
+        <activity android:name=".LegendsBootcampWODResults"></activity>
+        <activity android:name=".LegendsCrossfitWODResults" />
+        <activity android:name=".LegendsMgrBootcampWOD" />
+        <activity android:name=".LegendsMgrCrossfitWOD" />
+        <activity android:name=".LegendsAddStrength" />
+        <activity android:name=".LegendsAddWorkout" />
+        <activity android:name=".LegendsNavigation" />
         <activity android:name=".LegendsHome" />
         <activity android:name=".LegendProfilePhoto" />
         <activity android:name=".LegendCreateAccount" />
