@@ -1,14 +1,38 @@
 package com.example.barbellapp;
 
-public class User {
-    public String firstName, lastName, email;
+import android.widget.EditText;
 
-    public User() {
+public class User {
+    private String firstName, lastName, email;
+
+    public User(EditText fName, EditText lName, EditText email) {
     }
 
     public User(String firstName, String lastName, String email) {
         this.firstName = firstName;
         this.lastName = lastName;
+        this.email = email;
+    }
+
+    public String getFirstName() {
+        return firstName;
+    }
+
+    public String getLastName() {
+        return lastName;
+    }
+
+    public String getEmail() {
+        return email;
+    }
+
+    public void setFirstName() { this.firstName = firstName; }
+
+    public void setLastName() {
+        this.lastName = lastName;
+    }
+
+    public void setEmail() {
         this.email = email;
     }
 }

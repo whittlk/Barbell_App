@@ -15,6 +15,14 @@
       },
       "oauth_client": [
         {
+          "client_id": "874432234799-hln2vqvkn4r6nm4d4kuh4s25r7ktp85r.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "com.example.barbellapp",
+            "certificate_hash": "f0253e6fd94fe23c8455663d68703256cf243a52"
+          }
+        },
+        {
           "client_id": "874432234799-hdl0the7fn4jj6fao00fbdfoickncokc.apps.googleusercontent.com",
           "client_type": 1,
           "android_info": {
