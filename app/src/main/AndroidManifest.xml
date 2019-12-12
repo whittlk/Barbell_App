@@ -12,7 +12,8 @@
         android:roundIcon="@mipmap/ic_launcher_round"
         android:supportsRtl="true"
         android:theme="@style/AppTheme">
-        <activity android:name=".LegendsBootcampWODResults"></activity>
+        <activity android:name=".LegendNavigation"></activity>
+        <activity android:name=".LegendsBootcampWODResults" />
         <activity android:name=".LegendsCrossfitWODResults" />
         <activity android:name=".ForgotPassActivity" />
         <activity android:name=".LegendsMgrBootcampWOD" />
@@ -26,9 +27,7 @@
         <activity android:name=".LegendsMain" />
         <activity android:name=".LegendSettings" />
         <activity android:name=".LegendCrossfit" />
-        <activity android:name=".SignupActivity" />
         <activity android:name=".ProfileActivity" />
-        <activity android:name=".LoginActivity" />
         <activity android:name=".MainActivity">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
