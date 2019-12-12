@@ -1,3 +1,10 @@
 <resources>
     <string name="app_name">Legends Barbell</string>
+
+    <string-array name="workout_type">
+        <item>Select Workout</item>
+        <item></item>
+        <item></item>
+        <item></item>
+    </string-array>
 </resources>

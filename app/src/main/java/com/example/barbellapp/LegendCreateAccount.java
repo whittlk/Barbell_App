@@ -88,20 +88,20 @@ public class LegendCreateAccount extends AppCompatActivity {
                                 public void onComplete(@NonNull Task<AuthResult> task) {
                                     progressBar.setVisibility(View.GONE);
                                     if (task.isSuccessful()) {
-                                        Log.i("SignupActivity", "Test 1");
+                                        Log.i("LegendCreateAccount", "Test 1");
                                         String currentUserUid = FirebaseAuth.getInstance().getCurrentUser().getUid();
                                         User user = new User(fName.getText().toString(), lName.getText().toString(), email.getText().toString());
                                         mDatabaseReference = mDatabase.getReference().child("users").child(currentUserUid);
                                         mDatabaseReference.setValue(user);
                                         //mDatabaseReference = mDatabase.getReference().child("users");
-                                        Log.i("SignupActivity", "Test 2");
+                                        Log.i("LegendCreateAccount", "Test 2");
                                         //mDatabaseReference.setValue("test2");
                                         startActivity(new Intent(LegendCreateAccount.this, LegendsMain.class));
-                                        Log.i("SignupActivity", "Sign Up Successful");
+                                        Log.i("LegendCreateAccount", "Sign Up Successful");
                                     } else {
                                         Toast.makeText(LegendCreateAccount.this, task.getException().getMessage(),
                                                 Toast.LENGTH_LONG).show();
-                                        Log.e("SignupActivity", "Sign Up Failed");
+                                        Log.e("LegendCreateAccount", "Sign Up Failed");
                                     }
                                 }
 

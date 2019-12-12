@@ -20,7 +20,7 @@ public class Home extends MultiDexApplication {
 
 
         if(firebaseUser != null){
-            Intent intent = new Intent(Home.this, ProfileActivity.class);
+            Intent intent = new Intent(Home.this, LegendsHome.class);
             intent.addFlags(Intent.FLAG_ACTIVITY_NEW_TASK);
             startActivity(intent);
 

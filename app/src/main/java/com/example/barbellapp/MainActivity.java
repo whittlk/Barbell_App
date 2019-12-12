@@ -21,38 +21,12 @@ import android.widget.Toolbar;
 
 public class MainActivity extends AppCompatActivity {
 
-    ProgressBar progressBar;
-    Button signup;
-    Button login;
-
-    FirebaseAuth firebaseAuth;
 
     @RequiresApi(api = Build.VERSION_CODES.LOLLIPOP)
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_main);
-
-        progressBar = findViewById(R.id.progressBar);
-        signup = findViewById(R.id.btnSignup);
-        login = findViewById(R.id.btnLogin);
-
-        firebaseAuth = FirebaseAuth.getInstance();
-
-        signup.setOnClickListener(new View.OnClickListener(){
-            @Override
-            public void onClick(View view){
-                startActivity(new Intent(MainActivity.this, SignupActivity.class));
-            }
-        });
-
-
-        login.setOnClickListener(new View.OnClickListener(){
-            @Override
-            public void onClick(View view){
-                startActivity(new Intent(MainActivity.this, LoginActivity.class));
-            }
-        });
 
     }
 }
