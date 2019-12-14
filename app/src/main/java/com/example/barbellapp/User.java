@@ -4,8 +4,14 @@ import android.widget.EditText;
 
 public class User {
     private String firstName, lastName, email;
+    public User() {
+        this.firstName = "";
+        this.lastName = "";
+        this.email = "";
+    }
 
     public User(EditText fName, EditText lName, EditText email) {
+
     }
 
     public User(String firstName, String lastName, String email) {
@@ -35,4 +41,9 @@ public class User {
     public void setEmail() {
         this.email = email;
     }
+
+    public String toString() {
+        return "Name:" + getFirstName() + "." + getLastName() + "\tEmail:" + getEmail();
+    }
+
 }
