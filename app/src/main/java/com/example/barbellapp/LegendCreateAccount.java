@@ -90,7 +90,7 @@ public class LegendCreateAccount extends AppCompatActivity {
                                     if (task.isSuccessful()) {
                                         Log.i("LegendCreateAccount", "Test 1");
                                         String currentUserUid = FirebaseAuth.getInstance().getCurrentUser().getUid();
-                                        User user = new User(fName.getText().toString(), lName.getText().toString(), email.getText().toString());
+                                        User user = new User(fName.getText().toString(), lName.getText().toString(), email.getText().toString(), "false");
                                         mDatabaseReference = mDatabase.getReference().child("users").child(currentUserUid);
                                         mDatabaseReference.setValue(user);
                                         //mDatabaseReference = mDatabase.getReference().child("users");

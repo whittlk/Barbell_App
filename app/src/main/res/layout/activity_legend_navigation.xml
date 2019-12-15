@@ -30,11 +30,11 @@
         android:layout_marginTop="32dp"
         android:text="Navigation"
         android:textColor="@color/white"
-        app:layout_constraintStart_toEndOf="@+id/imageButton6"
+        app:layout_constraintStart_toEndOf="@+id/lnBackButton"
         app:layout_constraintTop_toTopOf="parent" />
 
     <ImageButton
-        android:id="@+id/imageButton6"
+        android:id="@+id/lnBackButton"
         android:layout_width="33dp"
         android:layout_height="50dp"
         android:layout_marginStart="29dp"
@@ -53,10 +53,10 @@
         android:background="@color/white"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/imageButton6" />
+        app:layout_constraintTop_toBottomOf="@+id/lnBackButton" />
 
     <TextView
-        android:id="@+id/textView16"
+        android:id="@+id/lnCrossfit"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_margin="10dp"
@@ -67,7 +67,7 @@
         android:paddingBottom="25dp"
         android:text="Crossfit"
         android:textColor="@color/white"
-        app:layout_constraintBottom_toTopOf="@+id/textView17"
+        app:layout_constraintBottom_toTopOf="@+id/lnStrengthResults"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.5"
         app:layout_constraintStart_toStartOf="parent"
@@ -80,10 +80,10 @@
         android:background="@color/white"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/textView16" />
+        app:layout_constraintTop_toBottomOf="@+id/lnCrossfit" />
 
     <TextView
-        android:id="@+id/textView17"
+        android:id="@+id/lnStrengthResults"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:paddingLeft="100dp"
@@ -103,10 +103,10 @@
         android:background="@color/white"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/textView17" />
+        app:layout_constraintTop_toBottomOf="@+id/lnStrengthResults" />
 
     <TextView
-        android:id="@+id/textView18"
+        android:id="@+id/lnWorkoutResults"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:paddingLeft="100dp"
@@ -126,10 +126,10 @@
         android:background="@color/white"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/textView18" />
+        app:layout_constraintTop_toBottomOf="@+id/lnWorkoutResults" />
 
     <TextView
-        android:id="@+id/textView25"
+        android:id="@+id/lnBootcampResults"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:paddingLeft="90dp"
@@ -149,10 +149,10 @@
         android:background="@color/white"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/textView25" />
+        app:layout_constraintTop_toBottomOf="@+id/lnBootcampResults" />
 
     <TextView
-        android:id="@+id/textView26"
+        android:id="@+id/lnCrossfitResults"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:paddingLeft="100dp"
@@ -172,10 +172,10 @@
         android:background="@color/white"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/textView26" />
+        app:layout_constraintTop_toBottomOf="@+id/lnCrossfitResults" />
 
     <TextView
-        android:id="@+id/textView27"
+        android:id="@+id/lnSettings"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:paddingLeft="150dp"
@@ -195,10 +195,10 @@
         android:background="@color/white"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/textView27" />
+        app:layout_constraintTop_toBottomOf="@+id/lnSettings" />
 
     <TextView
-        android:id="@+id/textView28"
+        android:id="@+id/lnSetBCWOD"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:paddingLeft="110dp"
@@ -207,23 +207,23 @@
         android:paddingBottom="25dp"
         android:text="Set Bootcamp WOD"
         android:textColor="@color/white"
-        android:visibility="gone"
+        android:visibility="visible"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/divider377" />
 
     <View
-        android:id="@+id/divider378"
+        android:id="@+id/setBCWODDiv"
         android:layout_width="360dp"
         android:layout_height="1dp"
         android:background="@color/white"
-        android:visibility="gone"
+        android:visibility="visible"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/textView28" />
+        app:layout_constraintTop_toBottomOf="@+id/lnSetBCWOD" />
 
     <TextView
-        android:id="@+id/textView29"
+        android:id="@+id/setCFWOD"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:paddingLeft="120dp"
@@ -232,20 +232,20 @@
         android:paddingBottom="25dp"
         android:text="Set Crossfit WOD"
         android:textColor="@color/white"
-        android:visibility="gone"
+        android:visibility="visible"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/divider378" />
+        app:layout_constraintTop_toBottomOf="@+id/setBCWODDiv" />
 
     <View
-        android:id="@+id/divider379"
+        android:id="@+id/setCFWODDiv"
         android:layout_width="360dp"
         android:layout_height="1dp"
         android:background="@color/white"
-        android:visibility="gone"
+        android:visibility="visible"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/textView29" />
+        app:layout_constraintTop_toBottomOf="@+id/setCFWOD" />
 
 
 </androidx.constraintlayout.widget.ConstraintLayout>

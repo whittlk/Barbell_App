@@ -26,7 +26,7 @@
         android:layout_marginStart="4dp"
         android:layout_marginLeft="4dp"
         android:layout_marginTop="32dp"
-        android:text="Crossfit Workout of the Day Result Entry"
+        android:text="Bootcamp Workout of the Day Result Entry"
         android:textColor="@color/white"
         app:layout_constraintStart_toEndOf="@+id/imageButton8"
         app:layout_constraintTop_toTopOf="parent" />

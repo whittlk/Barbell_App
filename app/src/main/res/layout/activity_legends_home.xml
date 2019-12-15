@@ -11,10 +11,9 @@
         android:id="@+id/scrollView2"
         android:layout_width="413dp"
         android:layout_height="564dp"
-        android:layout_marginTop="10dp"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/textView10">
+        app:layout_constraintTop_toTopOf="parent">
 
         <LinearLayout
             android:layout_width="match_parent"
@@ -25,6 +24,8 @@
                 android:id="@+id/imageView3"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
                 app:srcCompat="@drawable/legends_logo" />
 
             <HorizontalScrollView
@@ -7728,7 +7729,7 @@
 
             <androidx.constraintlayout.widget.ConstraintLayout
                 android:layout_width="match_parent"
-                android:layout_height="265dp">
+                android:layout_height="254dp">
 
                 <TextView
                     android:id="@+id/lhWOD"
@@ -7742,13 +7743,14 @@
                     app:layout_constraintTop_toTopOf="parent" />
 
                 <Button
-                    android:id="@+id/button4"
+                    android:id="@+id/lhSubmitScore"
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
                     android:text="Enter Results"
                     app:layout_constraintBottom_toBottomOf="parent"
                     app:layout_constraintEnd_toEndOf="parent"
                     app:layout_constraintStart_toStartOf="parent" />
+
             </androidx.constraintlayout.widget.ConstraintLayout>
 
         </LinearLayout>
@@ -7757,15 +7759,16 @@
 
 
     <TextView
-        android:id="@+id/textView10"
+        android:id="@+id/lhWorkoutType"
         android:layout_width="130dp"
         android:layout_height="24dp"
-        android:layout_marginTop="6dp"
-        android:layout_marginEnd="6dp"
-        android:layout_marginRight="6dp"
+        android:layout_marginTop="8dp"
+        android:layout_marginEnd="8dp"
+        android:layout_marginRight="8dp"
         android:text="Switch to Bootcamp"
         android:textColor="@color/white"
-        app:layout_constraintEnd_toStartOf="@+id/switch1"
+        android:textStyle="bold"
+        app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintTop_toTopOf="parent" />
 
     <androidx.constraintlayout.widget.ConstraintLayout
@@ -7845,16 +7848,5 @@
             app:layout_constraintBottom_toBottomOf="parent"
             app:layout_constraintStart_toEndOf="@+id/textView21" />
     </androidx.constraintlayout.widget.ConstraintLayout>
-
-    <Switch
-        android:id="@+id/switch1"
-        android:layout_width="65dp"
-        android:layout_height="27dp"
-        android:layout_marginTop="4dp"
-        android:layout_marginEnd="5dp"
-        android:layout_marginRight="5dp"
-        android:shadowColor="@android:color/darker_gray"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintTop_toTopOf="parent" />
 
 </androidx.constraintlayout.widget.ConstraintLayout>
