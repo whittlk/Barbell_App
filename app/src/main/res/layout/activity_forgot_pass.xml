@@ -55,10 +55,10 @@
             android:layout_height="wrap_content"
             android:layout_marginLeft="10dp"
             android:layout_marginRight="10dp"
-            android:background="@color/login_fore_details"
+            android:background="@color/white"
+            android:textColor="@color/black"
             android:inputType="textEmailAddress"
             android:padding="10dp" />
-
 
     </LinearLayout>
 

@@ -12,7 +12,8 @@
         android:roundIcon="@mipmap/ic_launcher_round"
         android:supportsRtl="true"
         android:theme="@style/AppTheme">
-        <activity android:name=".LegendNavigation"></activity>
+        <activity android:name=".log_lift_back_squat"></activity>
+        <activity android:name=".LegendNavigation" />
         <activity android:name=".LegendsBootcampWODResults" />
         <activity android:name=".LegendsCrossfitWODResults" />
         <activity android:name=".ForgotPassActivity" />
